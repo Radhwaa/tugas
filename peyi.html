@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="w3.css"/>
+    <title>Tugas Akhir</title>
+<style>
+    h2 {
+  text-shadow: 2px 2px 5px rgb(110, 98, 98);
+}
+h1 {
+  text-shadow: 2px 2px rgb(110, 98, 98);
+}
+</style>
+</head>
+<body bgcolor="black">
+<div class="w3-container">
+    <img src="rs.jpeg" alt="" width="100%" height="400"/>
+</div>
+    <div class="w3-bar w3-black">
+        <button class="w3-bar-item w3-button" onclick="openmenu('Home')">Velicia Theodany</button>
+        <button class="w3-bar-item w3-button" onclick="openmenu('RS')">Pekerjaan</button>
+        <div class="w3-dropdown-hover">
+        <button class="w3-button">Biodata</button>
+            <div class="w3-dropdown-content w3-bar-block w3-chard-4">
+                <button class="w3-bar-item w3-button" onclick="openmenu('subjek')">Tempat Tanggal Lahir</button>
+                <button class="w3-bar-item w3-button" onclick="openmenu('pkr')">Hobby</button>
+            </div>    
+        </div>
+        <button class="w3-bar-item w3-button" onclick="openmenu('cipta')">kreator</button>
+    </div>
+<br>
+    <div id="Home" class="w3-container Menu w3-animate-zoom" style="display: none">
+        <center>
+            <img src="op.jpeg" />
+        </center>
+    </div>
+
+    <div id="RS" class="w3-container Menu" style="display: none">
+        <center>
+            <img src="peyi.jpeg" width="300" height="400" class="w3-animate-top">
+            <h2 style="color: azure;" class="w3-animate-fading">
+                Velicia Theodany
+            </h2>
+        </center>
+        <p>
+           <font style="color: azure;">
+            Velicia Theodany atau biasa disebut peyi adalah brand ambassador dari salah satu team esport di Indonesia yaitu Onic esport
+    </div>  
+
+    <div id="subjek" class="w3-container Menu" style="display: none">
+        <center>
+        <img src="peyii.jpeg" height="400" width="300" class="w3-animate-zoom"/>
+        <h2 style="color: azure;" class="w3-animate-top">
+            Velicia Theodany atau Onic Peyi 
+        </h2>
+        </center>
+        <p>
+            <font style="color: azure;">
+                Velicia Theodany atau Onic Peyi lahir di Kota Pekanbaru pada tahun 2000. Onic Peyi sempat viral di sebuah aplikasi media sosial
+                karena kecantikannya. Tidak lama setelah viral, Velicia Theodany tersebut di kontrak oleh sebuah team esport besar indonesia yaitu onic esport
+        </p>
+    </div>
+
+    <div id="pkr" class="w3-container Menu" style="display: none">
+        <center>
+        <img src="drft.jpeg" height="400" width="300" class="w3-animate-zoom"/>
+        <h2 style="color: azure;" class="w3-animate-top">
+            Hobby
+        </h2>
+        </center>
+        <p>
+            <font style="color: azure;">
+                Selain menjadi brand ambassador team Onic esport, Onic Peyi juga memiliki bakat terpendam yaitu 
+                menjadi joki drifter dengan mobil mobil yang mewah. Ia sering mengunggah momen saat mengendarai 
+                mobil yang ia pakai untuk drift di media sosialnya yaitu Instagram maupun Youtube
+            </font>
+        </p>
+    </div>
+
+    <div id="cipta" class="w3-container Menu" style="display: none">
+        <br>
+        <center>
+        <img src="kakang.jpeg" width="300" height="400" class="w3-animate-bottom">
+        <br>
+        <br><br><br>
+        <p>
+            <footer>
+                <font style="color: azure;">
+                    <p>
+                        Nama:Muhammad Radhwa
+                        <br>
+                        Nim:10123417
+                        <br>
+                        kelas:IF-10
+                    </p>
+                </font>
+            </footer>
+        </p>
+        </center>
+    </div>
+<script>
+    function openmenu(namaMenu) {
+        var i;
+        var x = document.getElementsByClassName("Menu");
+        for (i = 0;i < x.length;i++){
+            x[i].style.display ="none";
+        }
+    document.getElementById(namaMenu).style.display ="block";
+    }
+</script>
+</body>
+</html>
